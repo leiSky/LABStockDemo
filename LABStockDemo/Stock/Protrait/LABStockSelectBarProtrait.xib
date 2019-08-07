@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="LABStockSelectBarProtrait" id="4hg-Yg-r4H" customClass="LABStockSelectBarProtrait">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="46"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KzE-Ps-yOI">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="46"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z9e-p8-mr8">
+                            <rect key="frame" x="0.0" y="0.0" width="53.5" height="46"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                            <state key="normal" title="分时">
+                                <color key="titleColor" red="0.61176470589999998" green="0.68235294120000001" blue="0.77647058820000003" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <state key="selected">
+                                <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="timeLineClick:" destination="4hg-Yg-r4H" eventType="touchUpInside" id="BiR-5x-BDG"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2KI-D3-PDX">
+                            <rect key="frame" x="53.5" y="0.0" width="53.5" height="46"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                            <state key="normal" title="1分">
+                                <color key="titleColor" red="0.61176470589999998" green="0.68235294120000001" blue="0.77647058820000003" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <state key="selected">
+                                <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="min1Click:" destination="4hg-Yg-r4H" eventType="touchUpInside" id="yoZ-tq-E9Y"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ciu-x0-gdd">
+                            <rect key="frame" x="107" y="0.0" width="53.5" height="46"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                            <state key="normal" title="5分">
+                                <color key="titleColor" red="0.61176470589999998" green="0.68235294120000001" blue="0.77647058820000003" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <state key="selected">
+                                <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="min5Click:" destination="4hg-Yg-r4H" eventType="touchUpInside" id="Jfs-26-rYY"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vwK-KR-bcd">
+                            <rect key="frame" x="160.5" y="0.0" width="54" height="46"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                            <state key="normal" title="15分">
+                                <color key="titleColor" red="0.61176470589999998" green="0.68235294120000001" blue="0.77647058820000003" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <state key="selected">
+                                <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="min15Click:" destination="4hg-Yg-r4H" eventType="touchUpInside" id="Bi3-5g-Xla"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3De-cZ-77n">
+                            <rect key="frame" x="214.5" y="0.0" width="53.5" height="46"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                            <state key="normal" title="30分">
+                                <color key="titleColor" red="0.61176470589999998" green="0.68235294120000001" blue="0.77647058820000003" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <state key="selected">
+                                <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="min30Click:" destination="4hg-Yg-r4H" eventType="touchUpInside" id="ZHX-Gg-DCO"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="34r-Oz-pvV">
+                            <rect key="frame" x="268" y="0.0" width="53.5" height="46"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                            <state key="normal" title="1小时">
+                                <color key="titleColor" red="0.61176470589999998" green="0.68235294120000001" blue="0.77647058820000003" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <state key="selected">
+                                <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="oneHourClick:" destination="4hg-Yg-r4H" eventType="touchUpInside" id="PqB-Ii-ibC"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W9R-TU-Wzc">
+                            <rect key="frame" x="321.5" y="0.0" width="53.5" height="46"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                            <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="10" maxY="0.0"/>
+                            <inset key="imageEdgeInsets" minX="40" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" title="指标" image="icon-open">
+                                <color key="titleColor" red="0.61176470589999998" green="0.68235294120000001" blue="0.77647058820000003" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <state key="selected">
+                                <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="accessoryClick:" destination="4hg-Yg-r4H" eventType="touchUpInside" id="8Hf-21-yWj"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="3De-cZ-77n" firstAttribute="width" secondItem="z9e-p8-mr8" secondAttribute="width" id="Eev-rA-8T8"/>
+                        <constraint firstItem="34r-Oz-pvV" firstAttribute="width" secondItem="z9e-p8-mr8" secondAttribute="width" id="OOV-M0-7u5"/>
+                        <constraint firstItem="Ciu-x0-gdd" firstAttribute="width" secondItem="z9e-p8-mr8" secondAttribute="width" id="qPR-qf-gna"/>
+                        <constraint firstItem="2KI-D3-PDX" firstAttribute="width" secondItem="z9e-p8-mr8" secondAttribute="width" id="rSR-L2-EBz"/>
+                        <constraint firstItem="vwK-KR-bcd" firstAttribute="width" secondItem="z9e-p8-mr8" secondAttribute="width" id="wD8-ia-uCs"/>
+                        <constraint firstItem="W9R-TU-Wzc" firstAttribute="width" secondItem="z9e-p8-mr8" secondAttribute="width" id="xcU-tD-fjp"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" red="0.14901960780000001" green="0.18823529410000001" blue="0.2784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="KzE-Ps-yOI" firstAttribute="leading" secondItem="4hg-Yg-r4H" secondAttribute="leading" id="9Xc-rD-gEW"/>
+                <constraint firstAttribute="trailing" secondItem="KzE-Ps-yOI" secondAttribute="trailing" id="M6W-2V-a6M"/>
+                <constraint firstAttribute="bottom" secondItem="KzE-Ps-yOI" secondAttribute="bottom" id="P0Q-68-jM1"/>
+                <constraint firstItem="KzE-Ps-yOI" firstAttribute="top" secondItem="4hg-Yg-r4H" secondAttribute="top" id="xpz-IH-yTU"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="accessoryBtn" destination="W9R-TU-Wzc" id="lkA-1t-Drd"/>
+                <outlet property="min15Btn" destination="vwK-KR-bcd" id="ML2-Wn-MCb"/>
+                <outlet property="min1Btn" destination="2KI-D3-PDX" id="vxF-QE-6LX"/>
+                <outlet property="min30Btn" destination="3De-cZ-77n" id="F0J-dw-FPv"/>
+                <outlet property="min5Btn" destination="Ciu-x0-gdd" id="gVk-96-h7T"/>
+                <outlet property="oneHourBtn" destination="34r-Oz-pvV" id="ghg-Zs-5gI"/>
+                <outlet property="timeLineBtn" destination="z9e-p8-mr8" id="Sge-Pd-w5K"/>
+            </connections>
+            <point key="canvasLocation" x="-117.59999999999999" y="-344.52773613193403"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon-open" width="4" height="4"/>
+    </resources>
+</document>

@@ -1,0 +1,1332 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1A4D93CE22D6CBEF00D985DC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A4D93CD22D6CBEF00D985DC /* AppDelegate.m */; };
+		1A4D93D122D6CBEF00D985DC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A4D93D022D6CBEF00D985DC /* ViewController.m */; };
+		1A4D93D422D6CBEF00D985DC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A4D93D222D6CBEF00D985DC /* Main.storyboard */; };
+		1A4D93D622D6CBF000D985DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A4D93D522D6CBF000D985DC /* Assets.xcassets */; };
+		1A4D93D922D6CBF000D985DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A4D93D722D6CBF000D985DC /* LaunchScreen.storyboard */; };
+		1A4D93DC22D6CBF000D985DC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A4D93DB22D6CBF000D985DC /* main.m */; };
+		1A4D93FD22D6CF5500D985DC /* LABStockFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A4D93FB22D6CF5500D985DC /* LABStockFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1A4D940022D6CF5500D985DC /* LABStockFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A4D93F922D6CF5500D985DC /* LABStockFramework.framework */; };
+		1A4D940122D6CF5500D985DC /* LABStockFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1A4D93F922D6CF5500D985DC /* LABStockFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1A4D941222D6D13900D985DC /* LABStockKLinePositionModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A4D941022D6D13900D985DC /* LABStockKLinePositionModel.h */; };
+		1A4D941322D6D13900D985DC /* LABStockKLinePositionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A4D941122D6D13900D985DC /* LABStockKLinePositionModel.m */; };
+		1A4D941622D6D15100D985DC /* LABStockVolumePositionModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A4D941422D6D15100D985DC /* LABStockVolumePositionModel.h */; };
+		1A4D941722D6D15100D985DC /* LABStockVolumePositionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A4D941522D6D15100D985DC /* LABStockVolumePositionModel.m */; };
+		1ADF346822D6D638003AAF14 /* LABStockConstant.h in Headers */ = {isa = PBXBuildFile; fileRef = 1ADF346722D6D638003AAF14 /* LABStockConstant.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1ADF346C22D6D8A4003AAF14 /* LABStockVariable.h in Headers */ = {isa = PBXBuildFile; fileRef = 1ADF346A22D6D8A4003AAF14 /* LABStockVariable.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1ADF346D22D6D8A4003AAF14 /* LABStockVariable.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ADF346B22D6D8A4003AAF14 /* LABStockVariable.m */; };
+		1ADF347122D6D8CB003AAF14 /* UIColor+LABStock.h in Headers */ = {isa = PBXBuildFile; fileRef = 1ADF346F22D6D8CB003AAF14 /* UIColor+LABStock.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1ADF347222D6D8CB003AAF14 /* UIColor+LABStock.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ADF347022D6D8CB003AAF14 /* UIColor+LABStock.m */; };
+		1ADF347522D6E20C003AAF14 /* LABStockMainView.h in Headers */ = {isa = PBXBuildFile; fileRef = 1ADF347322D6E20C003AAF14 /* LABStockMainView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1ADF347622D6E20C003AAF14 /* LABStockMainView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ADF347422D6E20C003AAF14 /* LABStockMainView.m */; };
+		1ADF348022D6E38B003AAF14 /* LABStockDataProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 1ADF347F22D6E38B003AAF14 /* LABStockDataProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1ADF348322D6FC27003AAF14 /* LABStockTimeLineView.h in Headers */ = {isa = PBXBuildFile; fileRef = 1ADF348122D6FC27003AAF14 /* LABStockTimeLineView.h */; };
+		1ADF348422D6FC27003AAF14 /* LABStockTimeLineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ADF348222D6FC27003AAF14 /* LABStockTimeLineView.m */; };
+		1ADF348722D70156003AAF14 /* LABStockTimeLineContainerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 1ADF348522D70156003AAF14 /* LABStockTimeLineContainerView.h */; };
+		1ADF348822D70156003AAF14 /* LABStockTimeLineContainerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ADF348622D70156003AAF14 /* LABStockTimeLineContainerView.m */; };
+		1ADF348B22D703C7003AAF14 /* LABStockTimeLineBgView.h in Headers */ = {isa = PBXBuildFile; fileRef = 1ADF348922D703C7003AAF14 /* LABStockTimeLineBgView.h */; };
+		1ADF348C22D703C7003AAF14 /* LABStockTimeLineBgView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ADF348A22D703C7003AAF14 /* LABStockTimeLineBgView.m */; };
+		1ADF348F22D7041E003AAF14 /* LABStockTimeLineMainView.h in Headers */ = {isa = PBXBuildFile; fileRef = 1ADF348D22D7041E003AAF14 /* LABStockTimeLineMainView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1ADF349022D7041E003AAF14 /* LABStockTimeLineMainView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ADF348E22D7041E003AAF14 /* LABStockTimeLineMainView.m */; };
+		1ADF349322D70595003AAF14 /* LABStockVolumeContainerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 1ADF349122D70595003AAF14 /* LABStockVolumeContainerView.h */; };
+		1ADF349422D70595003AAF14 /* LABStockVolumeContainerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ADF349222D70595003AAF14 /* LABStockVolumeContainerView.m */; };
+		1ADF349722D705A9003AAF14 /* LABStockVolumeBgView.h in Headers */ = {isa = PBXBuildFile; fileRef = 1ADF349522D705A9003AAF14 /* LABStockVolumeBgView.h */; };
+		1ADF349822D705A9003AAF14 /* LABStockVolumeBgView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ADF349622D705A9003AAF14 /* LABStockVolumeBgView.m */; };
+		1ADF349B22D705BA003AAF14 /* LABStockVolumeView.h in Headers */ = {isa = PBXBuildFile; fileRef = 1ADF349922D705BA003AAF14 /* LABStockVolumeView.h */; };
+		1ADF349C22D705BA003AAF14 /* LABStockVolumeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ADF349A22D705BA003AAF14 /* LABStockVolumeView.m */; };
+		1ADF349F22D70618003AAF14 /* LABStockAccessoryContainerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 1ADF349D22D70618003AAF14 /* LABStockAccessoryContainerView.h */; };
+		1ADF34A022D70618003AAF14 /* LABStockAccessoryContainerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ADF349E22D70618003AAF14 /* LABStockAccessoryContainerView.m */; };
+		1ADF34A322D70645003AAF14 /* LABStockAccessoryBgView.h in Headers */ = {isa = PBXBuildFile; fileRef = 1ADF34A122D70645003AAF14 /* LABStockAccessoryBgView.h */; };
+		1ADF34A422D70645003AAF14 /* LABStockAccessoryBgView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ADF34A222D70645003AAF14 /* LABStockAccessoryBgView.m */; };
+		1ADF34A722D70663003AAF14 /* LABStockAccessoryView.h in Headers */ = {isa = PBXBuildFile; fileRef = 1ADF34A522D70663003AAF14 /* LABStockAccessoryView.h */; };
+		1ADF34A822D70663003AAF14 /* LABStockAccessoryView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ADF34A622D70663003AAF14 /* LABStockAccessoryView.m */; };
+		1ADF34AB22D706C1003AAF14 /* LABStockTimeView.h in Headers */ = {isa = PBXBuildFile; fileRef = 1ADF34A922D706C1003AAF14 /* LABStockTimeView.h */; };
+		1ADF34AC22D706C1003AAF14 /* LABStockTimeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ADF34AA22D706C1003AAF14 /* LABStockTimeView.m */; };
+		1ADF34AF22D70700003AAF14 /* LABStockMaskView.h in Headers */ = {isa = PBXBuildFile; fileRef = 1ADF34AD22D70700003AAF14 /* LABStockMaskView.h */; };
+		1ADF34B022D70700003AAF14 /* LABStockMaskView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ADF34AE22D70700003AAF14 /* LABStockMaskView.m */; };
+		1ADF34B322D7071D003AAF14 /* LABStockTimeLineMaskView.h in Headers */ = {isa = PBXBuildFile; fileRef = 1ADF34B122D7071D003AAF14 /* LABStockTimeLineMaskView.h */; };
+		1ADF34B422D7071D003AAF14 /* LABStockTimeLineMaskView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ADF34B222D7071D003AAF14 /* LABStockTimeLineMaskView.m */; };
+		1ADF34B722D70729003AAF14 /* LABStockKLineMaskView.h in Headers */ = {isa = PBXBuildFile; fileRef = 1ADF34B522D70729003AAF14 /* LABStockKLineMaskView.h */; };
+		1ADF34B822D70729003AAF14 /* LABStockKLineMaskView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ADF34B622D70729003AAF14 /* LABStockKLineMaskView.m */; };
+		1ADF34BC22D70A9E003AAF14 /* LABStockViewPos.h in Headers */ = {isa = PBXBuildFile; fileRef = 1ADF34BA22D70A9E003AAF14 /* LABStockViewPos.h */; };
+		1ADF34BD22D70A9E003AAF14 /* LABStockViewPos.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ADF34BB22D70A9E003AAF14 /* LABStockViewPos.m */; };
+		1ADF34C022D83202003AAF14 /* LABStockAccessoryBase.h in Headers */ = {isa = PBXBuildFile; fileRef = 1ADF34BE22D83202003AAF14 /* LABStockAccessoryBase.h */; };
+		1ADF34C122D83202003AAF14 /* LABStockAccessoryBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ADF34BF22D83202003AAF14 /* LABStockAccessoryBase.m */; };
+		1ADF34C422D86250003AAF14 /* LABStockDrawLine.h in Headers */ = {isa = PBXBuildFile; fileRef = 1ADF34C222D86250003AAF14 /* LABStockDrawLine.h */; };
+		1ADF34C522D86250003AAF14 /* LABStockDrawLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ADF34C322D86250003AAF14 /* LABStockDrawLine.m */; };
+		1ADF34C822D86AE9003AAF14 /* LABStockMA.h in Headers */ = {isa = PBXBuildFile; fileRef = 1ADF34C622D86AE9003AAF14 /* LABStockMA.h */; };
+		1ADF34C922D86AE9003AAF14 /* LABStockMA.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ADF34C722D86AE9003AAF14 /* LABStockMA.m */; };
+		1ADF34CD22D86CB2003AAF14 /* LABStockFormatUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 1ADF34CB22D86CB2003AAF14 /* LABStockFormatUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1ADF34CE22D86CB2003AAF14 /* LABStockFormatUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ADF34CC22D86CB2003AAF14 /* LABStockFormatUtils.m */; };
+		1ADF34D522DC1934003AAF14 /* LABStockTimeUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 1ADF34D322DC1934003AAF14 /* LABStockTimeUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1ADF34D622DC1934003AAF14 /* LABStockTimeUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ADF34D422DC1934003AAF14 /* LABStockTimeUtils.m */; };
+		1ADF34D922DC4FB1003AAF14 /* LABStockVolumeMA.h in Headers */ = {isa = PBXBuildFile; fileRef = 1ADF34D722DC4FB1003AAF14 /* LABStockVolumeMA.h */; };
+		1ADF34DA22DC4FB1003AAF14 /* LABStockVolumeMA.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ADF34D822DC4FB1003AAF14 /* LABStockVolumeMA.m */; };
+		1ADF34DD22DC6E36003AAF14 /* LABStockASI.h in Headers */ = {isa = PBXBuildFile; fileRef = 1ADF34DB22DC6E36003AAF14 /* LABStockASI.h */; };
+		1ADF34DE22DC6E36003AAF14 /* LABStockASI.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ADF34DC22DC6E36003AAF14 /* LABStockASI.m */; };
+		1ADF34E122DC6E49003AAF14 /* LABStockBIAS.h in Headers */ = {isa = PBXBuildFile; fileRef = 1ADF34DF22DC6E49003AAF14 /* LABStockBIAS.h */; };
+		1ADF34E222DC6E49003AAF14 /* LABStockBIAS.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ADF34E022DC6E49003AAF14 /* LABStockBIAS.m */; };
+		1ADF34E522DC6E59003AAF14 /* LABStockBOLL.h in Headers */ = {isa = PBXBuildFile; fileRef = 1ADF34E322DC6E59003AAF14 /* LABStockBOLL.h */; };
+		1ADF34E622DC6E59003AAF14 /* LABStockBOLL.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ADF34E422DC6E59003AAF14 /* LABStockBOLL.m */; };
+		1ADF34E922DC6E65003AAF14 /* LABStockBRAR.h in Headers */ = {isa = PBXBuildFile; fileRef = 1ADF34E722DC6E65003AAF14 /* LABStockBRAR.h */; };
+		1ADF34EA22DC6E65003AAF14 /* LABStockBRAR.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ADF34E822DC6E65003AAF14 /* LABStockBRAR.m */; };
+		1ADF34ED22DC6E71003AAF14 /* LABStockCCI.h in Headers */ = {isa = PBXBuildFile; fileRef = 1ADF34EB22DC6E71003AAF14 /* LABStockCCI.h */; };
+		1ADF34EE22DC6E71003AAF14 /* LABStockCCI.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ADF34EC22DC6E71003AAF14 /* LABStockCCI.m */; };
+		1ADF34F122DC6E82003AAF14 /* LABStockCR.h in Headers */ = {isa = PBXBuildFile; fileRef = 1ADF34EF22DC6E82003AAF14 /* LABStockCR.h */; };
+		1ADF34F222DC6E82003AAF14 /* LABStockCR.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ADF34F022DC6E82003AAF14 /* LABStockCR.m */; };
+		1ADF34F522DC6E8E003AAF14 /* LABStockDMA.h in Headers */ = {isa = PBXBuildFile; fileRef = 1ADF34F322DC6E8E003AAF14 /* LABStockDMA.h */; };
+		1ADF34F622DC6E8E003AAF14 /* LABStockDMA.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ADF34F422DC6E8E003AAF14 /* LABStockDMA.m */; };
+		1ADF34F922DC6E9F003AAF14 /* LABStockDMI.h in Headers */ = {isa = PBXBuildFile; fileRef = 1ADF34F722DC6E9F003AAF14 /* LABStockDMI.h */; };
+		1ADF34FA22DC6E9F003AAF14 /* LABStockDMI.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ADF34F822DC6E9F003AAF14 /* LABStockDMI.m */; };
+		1ADF34FD22DC6EB0003AAF14 /* LABStockEMV.h in Headers */ = {isa = PBXBuildFile; fileRef = 1ADF34FB22DC6EB0003AAF14 /* LABStockEMV.h */; };
+		1ADF34FE22DC6EB0003AAF14 /* LABStockEMV.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ADF34FC22DC6EB0003AAF14 /* LABStockEMV.m */; };
+		1ADF350122DC6EBD003AAF14 /* LABStockEXPMA.h in Headers */ = {isa = PBXBuildFile; fileRef = 1ADF34FF22DC6EBD003AAF14 /* LABStockEXPMA.h */; };
+		1ADF350222DC6EBD003AAF14 /* LABStockEXPMA.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ADF350022DC6EBD003AAF14 /* LABStockEXPMA.m */; };
+		1ADF350522DC6ECA003AAF14 /* LABStockKDJ.h in Headers */ = {isa = PBXBuildFile; fileRef = 1ADF350322DC6ECA003AAF14 /* LABStockKDJ.h */; };
+		1ADF350622DC6ECA003AAF14 /* LABStockKDJ.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ADF350422DC6ECA003AAF14 /* LABStockKDJ.m */; };
+		1ADF350922DC6ED9003AAF14 /* LABStockMACD.h in Headers */ = {isa = PBXBuildFile; fileRef = 1ADF350722DC6ED9003AAF14 /* LABStockMACD.h */; };
+		1ADF350A22DC6ED9003AAF14 /* LABStockMACD.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ADF350822DC6ED9003AAF14 /* LABStockMACD.m */; };
+		1ADF350D22DC6EE5003AAF14 /* LABStockMIKE.h in Headers */ = {isa = PBXBuildFile; fileRef = 1ADF350B22DC6EE5003AAF14 /* LABStockMIKE.h */; };
+		1ADF350E22DC6EE5003AAF14 /* LABStockMIKE.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ADF350C22DC6EE5003AAF14 /* LABStockMIKE.m */; };
+		1ADF351522DC6F05003AAF14 /* LABStockOBV.h in Headers */ = {isa = PBXBuildFile; fileRef = 1ADF351322DC6F05003AAF14 /* LABStockOBV.h */; };
+		1ADF351622DC6F05003AAF14 /* LABStockOBV.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ADF351422DC6F05003AAF14 /* LABStockOBV.m */; };
+		1ADF351922DC6F14003AAF14 /* LABStockPSY.h in Headers */ = {isa = PBXBuildFile; fileRef = 1ADF351722DC6F14003AAF14 /* LABStockPSY.h */; };
+		1ADF351A22DC6F14003AAF14 /* LABStockPSY.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ADF351822DC6F14003AAF14 /* LABStockPSY.m */; };
+		1ADF351D22DC6F21003AAF14 /* LABStockROC.h in Headers */ = {isa = PBXBuildFile; fileRef = 1ADF351B22DC6F21003AAF14 /* LABStockROC.h */; };
+		1ADF351E22DC6F21003AAF14 /* LABStockROC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ADF351C22DC6F21003AAF14 /* LABStockROC.m */; };
+		1ADF352122DC6F2D003AAF14 /* LABStockRSI.h in Headers */ = {isa = PBXBuildFile; fileRef = 1ADF351F22DC6F2D003AAF14 /* LABStockRSI.h */; };
+		1ADF352222DC6F2D003AAF14 /* LABStockRSI.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ADF352022DC6F2D003AAF14 /* LABStockRSI.m */; };
+		1ADF352522DC6F3B003AAF14 /* LABStockSAR.h in Headers */ = {isa = PBXBuildFile; fileRef = 1ADF352322DC6F3B003AAF14 /* LABStockSAR.h */; };
+		1ADF352622DC6F3B003AAF14 /* LABStockSAR.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ADF352422DC6F3B003AAF14 /* LABStockSAR.m */; };
+		1ADF352922DC6F49003AAF14 /* LABStockTRIX.h in Headers */ = {isa = PBXBuildFile; fileRef = 1ADF352722DC6F49003AAF14 /* LABStockTRIX.h */; };
+		1ADF352A22DC6F49003AAF14 /* LABStockTRIX.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ADF352822DC6F49003AAF14 /* LABStockTRIX.m */; };
+		1ADF352D22DC6F5A003AAF14 /* LABStockVR.h in Headers */ = {isa = PBXBuildFile; fileRef = 1ADF352B22DC6F5A003AAF14 /* LABStockVR.h */; };
+		1ADF352E22DC6F5A003AAF14 /* LABStockVR.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ADF352C22DC6F5A003AAF14 /* LABStockVR.m */; };
+		1ADF353122DC6F63003AAF14 /* LABStockWR.h in Headers */ = {isa = PBXBuildFile; fileRef = 1ADF352F22DC6F63003AAF14 /* LABStockWR.h */; };
+		1ADF353222DC6F63003AAF14 /* LABStockWR.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ADF353022DC6F63003AAF14 /* LABStockWR.m */; };
+		1ADF353522DC6F6F003AAF14 /* LABStockWVAD.h in Headers */ = {isa = PBXBuildFile; fileRef = 1ADF353322DC6F6F003AAF14 /* LABStockWVAD.h */; };
+		1ADF353622DC6F6F003AAF14 /* LABStockWVAD.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ADF353422DC6F6F003AAF14 /* LABStockWVAD.m */; };
+		1ADF353922DC717F003AAF14 /* LABStockAccessoryKLine.h in Headers */ = {isa = PBXBuildFile; fileRef = 1ADF353722DC717F003AAF14 /* LABStockAccessoryKLine.h */; };
+		1ADF353A22DC717F003AAF14 /* LABStockAccessoryKLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ADF353822DC717F003AAF14 /* LABStockAccessoryKLine.m */; };
+		1ADF353E22DC86AE003AAF14 /* LABStockKLineMainView.h in Headers */ = {isa = PBXBuildFile; fileRef = 1ADF353C22DC86AE003AAF14 /* LABStockKLineMainView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1ADF353F22DC86AE003AAF14 /* LABStockKLineMainView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ADF353D22DC86AE003AAF14 /* LABStockKLineMainView.m */; };
+		1ADF354222DC86E5003AAF14 /* LABStockKLineContainerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 1ADF354022DC86E5003AAF14 /* LABStockKLineContainerView.h */; };
+		1ADF354322DC86E5003AAF14 /* LABStockKLineContainerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ADF354122DC86E5003AAF14 /* LABStockKLineContainerView.m */; };
+		1ADF354622DC86F4003AAF14 /* LABStockKLineBgView.h in Headers */ = {isa = PBXBuildFile; fileRef = 1ADF354422DC86F4003AAF14 /* LABStockKLineBgView.h */; };
+		1ADF354722DC86F4003AAF14 /* LABStockKLineBgView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ADF354522DC86F4003AAF14 /* LABStockKLineBgView.m */; };
+		1ADF354A22DC86FE003AAF14 /* LABStockKLineView.h in Headers */ = {isa = PBXBuildFile; fileRef = 1ADF354822DC86FE003AAF14 /* LABStockKLineView.h */; };
+		1ADF354B22DC86FE003AAF14 /* LABStockKLineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ADF354922DC86FE003AAF14 /* LABStockKLineView.m */; };
+		1AF7B85622E54EED00BF9A0E /* LABStockProtraitQuoteView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1AF7B85522E54EED00BF9A0E /* LABStockProtraitQuoteView.xib */; };
+		1AF7B85922E54EFE00BF9A0E /* LABStockQuoteView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF7B85822E54EFE00BF9A0E /* LABStockQuoteView.m */; };
+		1AF7B85C22E5544000BF9A0E /* LABStockSelectBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF7B85B22E5544000BF9A0E /* LABStockSelectBar.m */; };
+		1AF7B85E22E5545000BF9A0E /* LABStockSelectBarProtrait.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1AF7B85D22E5545000BF9A0E /* LABStockSelectBarProtrait.xib */; };
+		1AF7B86222E5577B00BF9A0E /* LABStockSelectBarProtrait.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF7B86122E5577B00BF9A0E /* LABStockSelectBarProtrait.m */; };
+		1AF7B86522E55B1F00BF9A0E /* LABStockSelectBarMoreView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF7B86422E55B1F00BF9A0E /* LABStockSelectBarMoreView.m */; };
+		1AF7B86822E55BD300BF9A0E /* LABStockSelectBarAccessoryView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF7B86722E55BD300BF9A0E /* LABStockSelectBarAccessoryView.m */; };
+		1AF7B86B22E5612D00BF9A0E /* LABStockProtraitView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF7B86A22E5612D00BF9A0E /* LABStockProtraitView.m */; };
+		1AF7B86E22E5620200BF9A0E /* LABStcokSelectMaskView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF7B86D22E5620200BF9A0E /* LABStcokSelectMaskView.m */; };
+		1AF7B87022E5622300BF9A0E /* LABStcokSelectMaskView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1AF7B86F22E5622300BF9A0E /* LABStcokSelectMaskView.xib */; };
+		1AF7B87522E5827000BF9A0E /* LABStock.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF7B87222E564C500BF9A0E /* LABStock.m */; };
+		1AF7B87822E58E0A00BF9A0E /* LABStockDataTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF7B87722E58E0A00BF9A0E /* LABStockDataTools.m */; };
+		1AF7B87D22E5906C00BF9A0E /* minData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1AF7B87C22E5906C00BF9A0E /* minData.plist */; };
+		1AF7B8A222E8380900BF9A0E /* DataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF7B8A122E8380900BF9A0E /* DataModel.m */; };
+		1AF7B8CD22E9544700BF9A0E /* LABStockDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF7B8CC22E9544700BF9A0E /* LABStockDataModel.m */; };
+		1AF7B8D022EA97BE00BF9A0E /* LABStockQuoteViewData.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF7B8CF22EA97BD00BF9A0E /* LABStockQuoteViewData.m */; };
+		1AF7B8D322EA985700BF9A0E /* LABStockLandspaceQuoteView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF7B8D222EA985700BF9A0E /* LABStockLandspaceQuoteView.m */; };
+		1AF7B8D622EA98AE00BF9A0E /* LABStockProtraitQuoteView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF7B8D522EA98AE00BF9A0E /* LABStockProtraitQuoteView.m */; };
+		1AF7B8D822EA9A4200BF9A0E /* LABStockLandspaceQuoteView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1AF7B8D722EA9A4200BF9A0E /* LABStockLandspaceQuoteView.xib */; };
+		1AF7B8DB22EA9B5600BF9A0E /* LABStockSelectBarLandspace.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF7B8DA22EA9B5600BF9A0E /* LABStockSelectBarLandspace.m */; };
+		1AF7B8DD22EA9B5F00BF9A0E /* LABStockSelectBarLandspace.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1AF7B8DC22EA9B5F00BF9A0E /* LABStockSelectBarLandspace.xib */; };
+		1AF7B8E022EA9C2C00BF9A0E /* LABStockLandspaceAccessory.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF7B8DF22EA9C2C00BF9A0E /* LABStockLandspaceAccessory.m */; };
+		1AF7B8E322EA9CE600BF9A0E /* LABStockLandspaceView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF7B8E222EA9CE600BF9A0E /* LABStockLandspaceView.m */; };
+		1AF7B8E622EAA63000BF9A0E /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF7B8E522EAA63000BF9A0E /* SecondViewController.m */; };
+		1AF7B8E922EACE1400BF9A0E /* NavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF7B8E822EACE1400BF9A0E /* NavViewController.m */; };
+		3FCD4774C131C7AF24A6F72C /* libPods-LABStockDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 624064EF8792B781E5B2CBA7 /* libPods-LABStockDemo.a */; };
+		D9B595EDEC95146CED15C7FB /* libPods-LABStockFramework.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B21157DE5D085918306BCBD6 /* libPods-LABStockFramework.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1A4D93FE22D6CF5500D985DC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1A4D93C122D6CBEF00D985DC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1A4D93F822D6CF5500D985DC;
+			remoteInfo = LABStockFramework;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1A4D93F322D6CBFE00D985DC /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				1A4D940122D6CF5500D985DC /* LABStockFramework.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1A4D93C922D6CBEF00D985DC /* LABStockDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LABStockDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A4D93CC22D6CBEF00D985DC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1A4D93CD22D6CBEF00D985DC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1A4D93CF22D6CBEF00D985DC /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		1A4D93D022D6CBEF00D985DC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		1A4D93D322D6CBEF00D985DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1A4D93D522D6CBF000D985DC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1A4D93D822D6CBF000D985DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1A4D93DA22D6CBF000D985DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1A4D93DB22D6CBF000D985DC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1A4D93F922D6CF5500D985DC /* LABStockFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LABStockFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A4D93FB22D6CF5500D985DC /* LABStockFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LABStockFramework.h; sourceTree = "<group>"; };
+		1A4D93FC22D6CF5500D985DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1A4D941022D6D13900D985DC /* LABStockKLinePositionModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LABStockKLinePositionModel.h; sourceTree = "<group>"; };
+		1A4D941122D6D13900D985DC /* LABStockKLinePositionModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LABStockKLinePositionModel.m; sourceTree = "<group>"; };
+		1A4D941422D6D15100D985DC /* LABStockVolumePositionModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LABStockVolumePositionModel.h; sourceTree = "<group>"; };
+		1A4D941522D6D15100D985DC /* LABStockVolumePositionModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LABStockVolumePositionModel.m; sourceTree = "<group>"; };
+		1ADF346722D6D638003AAF14 /* LABStockConstant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LABStockConstant.h; sourceTree = "<group>"; };
+		1ADF346A22D6D8A4003AAF14 /* LABStockVariable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LABStockVariable.h; sourceTree = "<group>"; };
+		1ADF346B22D6D8A4003AAF14 /* LABStockVariable.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LABStockVariable.m; sourceTree = "<group>"; };
+		1ADF346F22D6D8CB003AAF14 /* UIColor+LABStock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+LABStock.h"; sourceTree = "<group>"; };
+		1ADF347022D6D8CB003AAF14 /* UIColor+LABStock.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+LABStock.m"; sourceTree = "<group>"; };
+		1ADF347322D6E20C003AAF14 /* LABStockMainView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LABStockMainView.h; sourceTree = "<group>"; };
+		1ADF347422D6E20C003AAF14 /* LABStockMainView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LABStockMainView.m; sourceTree = "<group>"; };
+		1ADF347F22D6E38B003AAF14 /* LABStockDataProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LABStockDataProtocol.h; sourceTree = "<group>"; };
+		1ADF348122D6FC27003AAF14 /* LABStockTimeLineView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LABStockTimeLineView.h; sourceTree = "<group>"; };
+		1ADF348222D6FC27003AAF14 /* LABStockTimeLineView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LABStockTimeLineView.m; sourceTree = "<group>"; };
+		1ADF348522D70156003AAF14 /* LABStockTimeLineContainerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LABStockTimeLineContainerView.h; sourceTree = "<group>"; };
+		1ADF348622D70156003AAF14 /* LABStockTimeLineContainerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LABStockTimeLineContainerView.m; sourceTree = "<group>"; };
+		1ADF348922D703C7003AAF14 /* LABStockTimeLineBgView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LABStockTimeLineBgView.h; sourceTree = "<group>"; };
+		1ADF348A22D703C7003AAF14 /* LABStockTimeLineBgView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LABStockTimeLineBgView.m; sourceTree = "<group>"; };
+		1ADF348D22D7041E003AAF14 /* LABStockTimeLineMainView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LABStockTimeLineMainView.h; sourceTree = "<group>"; };
+		1ADF348E22D7041E003AAF14 /* LABStockTimeLineMainView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LABStockTimeLineMainView.m; sourceTree = "<group>"; };
+		1ADF349122D70595003AAF14 /* LABStockVolumeContainerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LABStockVolumeContainerView.h; sourceTree = "<group>"; };
+		1ADF349222D70595003AAF14 /* LABStockVolumeContainerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LABStockVolumeContainerView.m; sourceTree = "<group>"; };
+		1ADF349522D705A9003AAF14 /* LABStockVolumeBgView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LABStockVolumeBgView.h; sourceTree = "<group>"; };
+		1ADF349622D705A9003AAF14 /* LABStockVolumeBgView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LABStockVolumeBgView.m; sourceTree = "<group>"; };
+		1ADF349922D705BA003AAF14 /* LABStockVolumeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LABStockVolumeView.h; sourceTree = "<group>"; };
+		1ADF349A22D705BA003AAF14 /* LABStockVolumeView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LABStockVolumeView.m; sourceTree = "<group>"; };
+		1ADF349D22D70618003AAF14 /* LABStockAccessoryContainerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LABStockAccessoryContainerView.h; sourceTree = "<group>"; };
+		1ADF349E22D70618003AAF14 /* LABStockAccessoryContainerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LABStockAccessoryContainerView.m; sourceTree = "<group>"; };
+		1ADF34A122D70645003AAF14 /* LABStockAccessoryBgView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LABStockAccessoryBgView.h; sourceTree = "<group>"; };
+		1ADF34A222D70645003AAF14 /* LABStockAccessoryBgView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LABStockAccessoryBgView.m; sourceTree = "<group>"; };
+		1ADF34A522D70663003AAF14 /* LABStockAccessoryView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LABStockAccessoryView.h; sourceTree = "<group>"; };
+		1ADF34A622D70663003AAF14 /* LABStockAccessoryView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LABStockAccessoryView.m; sourceTree = "<group>"; };
+		1ADF34A922D706C1003AAF14 /* LABStockTimeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LABStockTimeView.h; sourceTree = "<group>"; };
+		1ADF34AA22D706C1003AAF14 /* LABStockTimeView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LABStockTimeView.m; sourceTree = "<group>"; };
+		1ADF34AD22D70700003AAF14 /* LABStockMaskView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LABStockMaskView.h; sourceTree = "<group>"; };
+		1ADF34AE22D70700003AAF14 /* LABStockMaskView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LABStockMaskView.m; sourceTree = "<group>"; };
+		1ADF34B122D7071D003AAF14 /* LABStockTimeLineMaskView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LABStockTimeLineMaskView.h; sourceTree = "<group>"; };
+		1ADF34B222D7071D003AAF14 /* LABStockTimeLineMaskView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LABStockTimeLineMaskView.m; sourceTree = "<group>"; };
+		1ADF34B522D70729003AAF14 /* LABStockKLineMaskView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LABStockKLineMaskView.h; sourceTree = "<group>"; };
+		1ADF34B622D70729003AAF14 /* LABStockKLineMaskView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LABStockKLineMaskView.m; sourceTree = "<group>"; };
+		1ADF34BA22D70A9E003AAF14 /* LABStockViewPos.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LABStockViewPos.h; sourceTree = "<group>"; };
+		1ADF34BB22D70A9E003AAF14 /* LABStockViewPos.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LABStockViewPos.m; sourceTree = "<group>"; };
+		1ADF34BE22D83202003AAF14 /* LABStockAccessoryBase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LABStockAccessoryBase.h; sourceTree = "<group>"; };
+		1ADF34BF22D83202003AAF14 /* LABStockAccessoryBase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LABStockAccessoryBase.m; sourceTree = "<group>"; };
+		1ADF34C222D86250003AAF14 /* LABStockDrawLine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LABStockDrawLine.h; sourceTree = "<group>"; };
+		1ADF34C322D86250003AAF14 /* LABStockDrawLine.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LABStockDrawLine.m; sourceTree = "<group>"; };
+		1ADF34C622D86AE9003AAF14 /* LABStockMA.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LABStockMA.h; sourceTree = "<group>"; };
+		1ADF34C722D86AE9003AAF14 /* LABStockMA.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LABStockMA.m; sourceTree = "<group>"; };
+		1ADF34CB22D86CB2003AAF14 /* LABStockFormatUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LABStockFormatUtils.h; sourceTree = "<group>"; };
+		1ADF34CC22D86CB2003AAF14 /* LABStockFormatUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LABStockFormatUtils.m; sourceTree = "<group>"; };
+		1ADF34D322DC1934003AAF14 /* LABStockTimeUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LABStockTimeUtils.h; sourceTree = "<group>"; };
+		1ADF34D422DC1934003AAF14 /* LABStockTimeUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LABStockTimeUtils.m; sourceTree = "<group>"; };
+		1ADF34D722DC4FB1003AAF14 /* LABStockVolumeMA.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LABStockVolumeMA.h; sourceTree = "<group>"; };
+		1ADF34D822DC4FB1003AAF14 /* LABStockVolumeMA.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LABStockVolumeMA.m; sourceTree = "<group>"; };
+		1ADF34DB22DC6E36003AAF14 /* LABStockASI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LABStockASI.h; sourceTree = "<group>"; };
+		1ADF34DC22DC6E36003AAF14 /* LABStockASI.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LABStockASI.m; sourceTree = "<group>"; };
+		1ADF34DF22DC6E49003AAF14 /* LABStockBIAS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LABStockBIAS.h; sourceTree = "<group>"; };
+		1ADF34E022DC6E49003AAF14 /* LABStockBIAS.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LABStockBIAS.m; sourceTree = "<group>"; };
+		1ADF34E322DC6E59003AAF14 /* LABStockBOLL.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LABStockBOLL.h; sourceTree = "<group>"; };
+		1ADF34E422DC6E59003AAF14 /* LABStockBOLL.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LABStockBOLL.m; sourceTree = "<group>"; };
+		1ADF34E722DC6E65003AAF14 /* LABStockBRAR.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LABStockBRAR.h; sourceTree = "<group>"; };
+		1ADF34E822DC6E65003AAF14 /* LABStockBRAR.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LABStockBRAR.m; sourceTree = "<group>"; };
+		1ADF34EB22DC6E71003AAF14 /* LABStockCCI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LABStockCCI.h; sourceTree = "<group>"; };
+		1ADF34EC22DC6E71003AAF14 /* LABStockCCI.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LABStockCCI.m; sourceTree = "<group>"; };
+		1ADF34EF22DC6E82003AAF14 /* LABStockCR.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LABStockCR.h; sourceTree = "<group>"; };
+		1ADF34F022DC6E82003AAF14 /* LABStockCR.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LABStockCR.m; sourceTree = "<group>"; };
+		1ADF34F322DC6E8E003AAF14 /* LABStockDMA.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LABStockDMA.h; sourceTree = "<group>"; };
+		1ADF34F422DC6E8E003AAF14 /* LABStockDMA.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LABStockDMA.m; sourceTree = "<group>"; };
+		1ADF34F722DC6E9F003AAF14 /* LABStockDMI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LABStockDMI.h; sourceTree = "<group>"; };
+		1ADF34F822DC6E9F003AAF14 /* LABStockDMI.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LABStockDMI.m; sourceTree = "<group>"; };
+		1ADF34FB22DC6EB0003AAF14 /* LABStockEMV.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LABStockEMV.h; sourceTree = "<group>"; };
+		1ADF34FC22DC6EB0003AAF14 /* LABStockEMV.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LABStockEMV.m; sourceTree = "<group>"; };
+		1ADF34FF22DC6EBD003AAF14 /* LABStockEXPMA.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LABStockEXPMA.h; sourceTree = "<group>"; };
+		1ADF350022DC6EBD003AAF14 /* LABStockEXPMA.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LABStockEXPMA.m; sourceTree = "<group>"; };
+		1ADF350322DC6ECA003AAF14 /* LABStockKDJ.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LABStockKDJ.h; sourceTree = "<group>"; };
+		1ADF350422DC6ECA003AAF14 /* LABStockKDJ.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LABStockKDJ.m; sourceTree = "<group>"; };
+		1ADF350722DC6ED9003AAF14 /* LABStockMACD.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LABStockMACD.h; sourceTree = "<group>"; };
+		1ADF350822DC6ED9003AAF14 /* LABStockMACD.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LABStockMACD.m; sourceTree = "<group>"; };
+		1ADF350B22DC6EE5003AAF14 /* LABStockMIKE.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LABStockMIKE.h; sourceTree = "<group>"; };
+		1ADF350C22DC6EE5003AAF14 /* LABStockMIKE.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LABStockMIKE.m; sourceTree = "<group>"; };
+		1ADF351322DC6F05003AAF14 /* LABStockOBV.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LABStockOBV.h; sourceTree = "<group>"; };
+		1ADF351422DC6F05003AAF14 /* LABStockOBV.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LABStockOBV.m; sourceTree = "<group>"; };
+		1ADF351722DC6F14003AAF14 /* LABStockPSY.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LABStockPSY.h; sourceTree = "<group>"; };
+		1ADF351822DC6F14003AAF14 /* LABStockPSY.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LABStockPSY.m; sourceTree = "<group>"; };
+		1ADF351B22DC6F21003AAF14 /* LABStockROC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LABStockROC.h; sourceTree = "<group>"; };
+		1ADF351C22DC6F21003AAF14 /* LABStockROC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LABStockROC.m; sourceTree = "<group>"; };
+		1ADF351F22DC6F2D003AAF14 /* LABStockRSI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LABStockRSI.h; sourceTree = "<group>"; };
+		1ADF352022DC6F2D003AAF14 /* LABStockRSI.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LABStockRSI.m; sourceTree = "<group>"; };
+		1ADF352322DC6F3B003AAF14 /* LABStockSAR.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LABStockSAR.h; sourceTree = "<group>"; };
+		1ADF352422DC6F3B003AAF14 /* LABStockSAR.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LABStockSAR.m; sourceTree = "<group>"; };
+		1ADF352722DC6F49003AAF14 /* LABStockTRIX.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LABStockTRIX.h; sourceTree = "<group>"; };
+		1ADF352822DC6F49003AAF14 /* LABStockTRIX.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LABStockTRIX.m; sourceTree = "<group>"; };
+		1ADF352B22DC6F5A003AAF14 /* LABStockVR.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LABStockVR.h; sourceTree = "<group>"; };
+		1ADF352C22DC6F5A003AAF14 /* LABStockVR.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LABStockVR.m; sourceTree = "<group>"; };
+		1ADF352F22DC6F63003AAF14 /* LABStockWR.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LABStockWR.h; sourceTree = "<group>"; };
+		1ADF353022DC6F63003AAF14 /* LABStockWR.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LABStockWR.m; sourceTree = "<group>"; };
+		1ADF353322DC6F6F003AAF14 /* LABStockWVAD.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LABStockWVAD.h; sourceTree = "<group>"; };
+		1ADF353422DC6F6F003AAF14 /* LABStockWVAD.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LABStockWVAD.m; sourceTree = "<group>"; };
+		1ADF353722DC717F003AAF14 /* LABStockAccessoryKLine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LABStockAccessoryKLine.h; sourceTree = "<group>"; };
+		1ADF353822DC717F003AAF14 /* LABStockAccessoryKLine.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LABStockAccessoryKLine.m; sourceTree = "<group>"; };
+		1ADF353C22DC86AE003AAF14 /* LABStockKLineMainView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LABStockKLineMainView.h; sourceTree = "<group>"; };
+		1ADF353D22DC86AE003AAF14 /* LABStockKLineMainView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LABStockKLineMainView.m; sourceTree = "<group>"; };
+		1ADF354022DC86E5003AAF14 /* LABStockKLineContainerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LABStockKLineContainerView.h; sourceTree = "<group>"; };
+		1ADF354122DC86E5003AAF14 /* LABStockKLineContainerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LABStockKLineContainerView.m; sourceTree = "<group>"; };
+		1ADF354422DC86F4003AAF14 /* LABStockKLineBgView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LABStockKLineBgView.h; sourceTree = "<group>"; };
+		1ADF354522DC86F4003AAF14 /* LABStockKLineBgView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LABStockKLineBgView.m; sourceTree = "<group>"; };
+		1ADF354822DC86FE003AAF14 /* LABStockKLineView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LABStockKLineView.h; sourceTree = "<group>"; };
+		1ADF354922DC86FE003AAF14 /* LABStockKLineView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LABStockKLineView.m; sourceTree = "<group>"; };
+		1AF7B85522E54EED00BF9A0E /* LABStockProtraitQuoteView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LABStockProtraitQuoteView.xib; sourceTree = "<group>"; };
+		1AF7B85722E54EFE00BF9A0E /* LABStockQuoteView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LABStockQuoteView.h; sourceTree = "<group>"; };
+		1AF7B85822E54EFE00BF9A0E /* LABStockQuoteView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LABStockQuoteView.m; sourceTree = "<group>"; };
+		1AF7B85A22E5544000BF9A0E /* LABStockSelectBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LABStockSelectBar.h; sourceTree = "<group>"; };
+		1AF7B85B22E5544000BF9A0E /* LABStockSelectBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LABStockSelectBar.m; sourceTree = "<group>"; };
+		1AF7B85D22E5545000BF9A0E /* LABStockSelectBarProtrait.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LABStockSelectBarProtrait.xib; sourceTree = "<group>"; };
+		1AF7B86022E5577B00BF9A0E /* LABStockSelectBarProtrait.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LABStockSelectBarProtrait.h; sourceTree = "<group>"; };
+		1AF7B86122E5577B00BF9A0E /* LABStockSelectBarProtrait.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LABStockSelectBarProtrait.m; sourceTree = "<group>"; };
+		1AF7B86322E55B1F00BF9A0E /* LABStockSelectBarMoreView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LABStockSelectBarMoreView.h; sourceTree = "<group>"; };
+		1AF7B86422E55B1F00BF9A0E /* LABStockSelectBarMoreView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LABStockSelectBarMoreView.m; sourceTree = "<group>"; };
+		1AF7B86622E55BD300BF9A0E /* LABStockSelectBarAccessoryView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LABStockSelectBarAccessoryView.h; sourceTree = "<group>"; };
+		1AF7B86722E55BD300BF9A0E /* LABStockSelectBarAccessoryView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LABStockSelectBarAccessoryView.m; sourceTree = "<group>"; };
+		1AF7B86922E5612D00BF9A0E /* LABStockProtraitView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LABStockProtraitView.h; sourceTree = "<group>"; };
+		1AF7B86A22E5612D00BF9A0E /* LABStockProtraitView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LABStockProtraitView.m; sourceTree = "<group>"; };
+		1AF7B86C22E5620200BF9A0E /* LABStcokSelectMaskView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LABStcokSelectMaskView.h; sourceTree = "<group>"; };
+		1AF7B86D22E5620200BF9A0E /* LABStcokSelectMaskView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LABStcokSelectMaskView.m; sourceTree = "<group>"; };
+		1AF7B86F22E5622300BF9A0E /* LABStcokSelectMaskView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LABStcokSelectMaskView.xib; sourceTree = "<group>"; };
+		1AF7B87122E564C500BF9A0E /* LABStock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LABStock.h; sourceTree = "<group>"; };
+		1AF7B87222E564C500BF9A0E /* LABStock.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LABStock.m; sourceTree = "<group>"; };
+		1AF7B87622E58E0A00BF9A0E /* LABStockDataTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LABStockDataTools.h; sourceTree = "<group>"; };
+		1AF7B87722E58E0A00BF9A0E /* LABStockDataTools.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LABStockDataTools.m; sourceTree = "<group>"; };
+		1AF7B87C22E5906C00BF9A0E /* minData.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = minData.plist; sourceTree = "<group>"; };
+		1AF7B8A022E8380900BF9A0E /* DataModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataModel.h; sourceTree = "<group>"; };
+		1AF7B8A122E8380900BF9A0E /* DataModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DataModel.m; sourceTree = "<group>"; };
+		1AF7B8CB22E9544700BF9A0E /* LABStockDataModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LABStockDataModel.h; sourceTree = "<group>"; };
+		1AF7B8CC22E9544700BF9A0E /* LABStockDataModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LABStockDataModel.m; sourceTree = "<group>"; };
+		1AF7B8CE22EA97BD00BF9A0E /* LABStockQuoteViewData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LABStockQuoteViewData.h; sourceTree = "<group>"; };
+		1AF7B8CF22EA97BD00BF9A0E /* LABStockQuoteViewData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LABStockQuoteViewData.m; sourceTree = "<group>"; };
+		1AF7B8D122EA985700BF9A0E /* LABStockLandspaceQuoteView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LABStockLandspaceQuoteView.h; sourceTree = "<group>"; };
+		1AF7B8D222EA985700BF9A0E /* LABStockLandspaceQuoteView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LABStockLandspaceQuoteView.m; sourceTree = "<group>"; };
+		1AF7B8D422EA98AE00BF9A0E /* LABStockProtraitQuoteView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LABStockProtraitQuoteView.h; sourceTree = "<group>"; };
+		1AF7B8D522EA98AE00BF9A0E /* LABStockProtraitQuoteView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LABStockProtraitQuoteView.m; sourceTree = "<group>"; };
+		1AF7B8D722EA9A4200BF9A0E /* LABStockLandspaceQuoteView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LABStockLandspaceQuoteView.xib; sourceTree = "<group>"; };
+		1AF7B8D922EA9B5600BF9A0E /* LABStockSelectBarLandspace.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LABStockSelectBarLandspace.h; sourceTree = "<group>"; };
+		1AF7B8DA22EA9B5600BF9A0E /* LABStockSelectBarLandspace.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LABStockSelectBarLandspace.m; sourceTree = "<group>"; };
+		1AF7B8DC22EA9B5F00BF9A0E /* LABStockSelectBarLandspace.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LABStockSelectBarLandspace.xib; sourceTree = "<group>"; };
+		1AF7B8DE22EA9C2C00BF9A0E /* LABStockLandspaceAccessory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LABStockLandspaceAccessory.h; sourceTree = "<group>"; };
+		1AF7B8DF22EA9C2C00BF9A0E /* LABStockLandspaceAccessory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LABStockLandspaceAccessory.m; sourceTree = "<group>"; };
+		1AF7B8E122EA9CE600BF9A0E /* LABStockLandspaceView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LABStockLandspaceView.h; sourceTree = "<group>"; };
+		1AF7B8E222EA9CE600BF9A0E /* LABStockLandspaceView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LABStockLandspaceView.m; sourceTree = "<group>"; };
+		1AF7B8E422EAA63000BF9A0E /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		1AF7B8E522EAA63000BF9A0E /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		1AF7B8E722EACE1400BF9A0E /* NavViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NavViewController.h; sourceTree = "<group>"; };
+		1AF7B8E822EACE1400BF9A0E /* NavViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NavViewController.m; sourceTree = "<group>"; };
+		624064EF8792B781E5B2CBA7 /* libPods-LABStockDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LABStockDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8AAE539AB5FAB26C523DABA0 /* Pods-LABStockDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LABStockDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LABStockDemo/Pods-LABStockDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		A11FCFDFA055EC5EE9849500 /* Pods-LABStockDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LABStockDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-LABStockDemo/Pods-LABStockDemo.release.xcconfig"; sourceTree = "<group>"; };
+		ABF6782985D707A77022435E /* Pods-LABStockFramework.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LABStockFramework.release.xcconfig"; path = "Pods/Target Support Files/Pods-LABStockFramework/Pods-LABStockFramework.release.xcconfig"; sourceTree = "<group>"; };
+		B21157DE5D085918306BCBD6 /* libPods-LABStockFramework.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LABStockFramework.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF1539F582A66AA41EF126E6 /* Pods-LABStockFramework.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LABStockFramework.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LABStockFramework/Pods-LABStockFramework.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1A4D93C622D6CBEF00D985DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A4D940022D6CF5500D985DC /* LABStockFramework.framework in Frameworks */,
+				3FCD4774C131C7AF24A6F72C /* libPods-LABStockDemo.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A4D93F622D6CF5500D985DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9B595EDEC95146CED15C7FB /* libPods-LABStockFramework.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1A4D93C022D6CBEF00D985DC = {
+			isa = PBXGroup;
+			children = (
+				1A4D93CB22D6CBEF00D985DC /* LABStockDemo */,
+				1A4D93FA22D6CF5500D985DC /* LABStockFramework */,
+				1A4D93CA22D6CBEF00D985DC /* Products */,
+				F60E0F8407604F61C7006D94 /* Pods */,
+				35E1F4BB407F3568984A2920 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		1A4D93CA22D6CBEF00D985DC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1A4D93C922D6CBEF00D985DC /* LABStockDemo.app */,
+				1A4D93F922D6CF5500D985DC /* LABStockFramework.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1A4D93CB22D6CBEF00D985DC /* LABStockDemo */ = {
+			isa = PBXGroup;
+			children = (
+				1AF7B87922E58F8B00BF9A0E /* Data */,
+				1AF7B85F22E5559F00BF9A0E /* Stock */,
+				1A4D93CC22D6CBEF00D985DC /* AppDelegate.h */,
+				1A4D93CD22D6CBEF00D985DC /* AppDelegate.m */,
+				1A4D93CF22D6CBEF00D985DC /* ViewController.h */,
+				1A4D93D022D6CBEF00D985DC /* ViewController.m */,
+				1AF7B8E422EAA63000BF9A0E /* SecondViewController.h */,
+				1AF7B8E522EAA63000BF9A0E /* SecondViewController.m */,
+				1A4D93D222D6CBEF00D985DC /* Main.storyboard */,
+				1A4D93D522D6CBF000D985DC /* Assets.xcassets */,
+				1A4D93D722D6CBF000D985DC /* LaunchScreen.storyboard */,
+				1A4D93DA22D6CBF000D985DC /* Info.plist */,
+				1A4D93DB22D6CBF000D985DC /* main.m */,
+				1AF7B8E722EACE1400BF9A0E /* NavViewController.h */,
+				1AF7B8E822EACE1400BF9A0E /* NavViewController.m */,
+			);
+			path = LABStockDemo;
+			sourceTree = "<group>";
+		};
+		1A4D93FA22D6CF5500D985DC /* LABStockFramework */ = {
+			isa = PBXGroup;
+			children = (
+				1ADF34CA22D86CA0003AAF14 /* Utils */,
+				1ADF347D22D6E272003AAF14 /* Accessory */,
+				1A4D940722D6CF8200D985DC /* View */,
+				1A4D940622D6CF7900D985DC /* Model */,
+				1A4D940522D6CF6E00D985DC /* Config */,
+				1A4D93FB22D6CF5500D985DC /* LABStockFramework.h */,
+				1A4D93FC22D6CF5500D985DC /* Info.plist */,
+			);
+			path = LABStockFramework;
+			sourceTree = "<group>";
+		};
+		1A4D940522D6CF6E00D985DC /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				1ADF353B22DC8666003AAF14 /* Constant */,
+				1ADF346922D6D893003AAF14 /* Variable */,
+				1ADF346E22D6D8AD003AAF14 /* Color */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		1A4D940622D6CF7900D985DC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1A4D940E22D6D10900D985DC /* VolumePositionModel */,
+				1A4D940D22D6D0F800D985DC /* KLinePositionModel */,
+				1A4D940822D6CFA000D985DC /* DataProtocol */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1A4D940722D6CF8200D985DC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1ADF34B922D70A7B003AAF14 /* Pos */,
+				1ADF347E22D6E2AC003AAF14 /* AccessoryView */,
+				1ADF347C22D6E26C003AAF14 /* MaskView */,
+				1ADF347B22D6E261003AAF14 /* TimeView */,
+				1ADF347A22D6E256003AAF14 /* VolumeView */,
+				1ADF347822D6E247003AAF14 /* KLineView */,
+				1ADF347722D6E23C003AAF14 /* TimeLineView */,
+				1ADF347322D6E20C003AAF14 /* LABStockMainView.h */,
+				1ADF347422D6E20C003AAF14 /* LABStockMainView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1A4D940822D6CFA000D985DC /* DataProtocol */ = {
+			isa = PBXGroup;
+			children = (
+				1ADF347F22D6E38B003AAF14 /* LABStockDataProtocol.h */,
+			);
+			path = DataProtocol;
+			sourceTree = "<group>";
+		};
+		1A4D940D22D6D0F800D985DC /* KLinePositionModel */ = {
+			isa = PBXGroup;
+			children = (
+				1A4D941022D6D13900D985DC /* LABStockKLinePositionModel.h */,
+				1A4D941122D6D13900D985DC /* LABStockKLinePositionModel.m */,
+			);
+			path = KLinePositionModel;
+			sourceTree = "<group>";
+		};
+		1A4D940E22D6D10900D985DC /* VolumePositionModel */ = {
+			isa = PBXGroup;
+			children = (
+				1A4D941422D6D15100D985DC /* LABStockVolumePositionModel.h */,
+				1A4D941522D6D15100D985DC /* LABStockVolumePositionModel.m */,
+			);
+			path = VolumePositionModel;
+			sourceTree = "<group>";
+		};
+		1ADF346922D6D893003AAF14 /* Variable */ = {
+			isa = PBXGroup;
+			children = (
+				1ADF346A22D6D8A4003AAF14 /* LABStockVariable.h */,
+				1ADF346B22D6D8A4003AAF14 /* LABStockVariable.m */,
+			);
+			path = Variable;
+			sourceTree = "<group>";
+		};
+		1ADF346E22D6D8AD003AAF14 /* Color */ = {
+			isa = PBXGroup;
+			children = (
+				1ADF346F22D6D8CB003AAF14 /* UIColor+LABStock.h */,
+				1ADF347022D6D8CB003AAF14 /* UIColor+LABStock.m */,
+			);
+			path = Color;
+			sourceTree = "<group>";
+		};
+		1ADF347722D6E23C003AAF14 /* TimeLineView */ = {
+			isa = PBXGroup;
+			children = (
+				1ADF348D22D7041E003AAF14 /* LABStockTimeLineMainView.h */,
+				1ADF348E22D7041E003AAF14 /* LABStockTimeLineMainView.m */,
+				1ADF348522D70156003AAF14 /* LABStockTimeLineContainerView.h */,
+				1ADF348622D70156003AAF14 /* LABStockTimeLineContainerView.m */,
+				1ADF348922D703C7003AAF14 /* LABStockTimeLineBgView.h */,
+				1ADF348A22D703C7003AAF14 /* LABStockTimeLineBgView.m */,
+				1ADF348122D6FC27003AAF14 /* LABStockTimeLineView.h */,
+				1ADF348222D6FC27003AAF14 /* LABStockTimeLineView.m */,
+			);
+			path = TimeLineView;
+			sourceTree = "<group>";
+		};
+		1ADF347822D6E247003AAF14 /* KLineView */ = {
+			isa = PBXGroup;
+			children = (
+				1ADF353C22DC86AE003AAF14 /* LABStockKLineMainView.h */,
+				1ADF353D22DC86AE003AAF14 /* LABStockKLineMainView.m */,
+				1ADF354022DC86E5003AAF14 /* LABStockKLineContainerView.h */,
+				1ADF354122DC86E5003AAF14 /* LABStockKLineContainerView.m */,
+				1ADF354422DC86F4003AAF14 /* LABStockKLineBgView.h */,
+				1ADF354522DC86F4003AAF14 /* LABStockKLineBgView.m */,
+				1ADF354822DC86FE003AAF14 /* LABStockKLineView.h */,
+				1ADF354922DC86FE003AAF14 /* LABStockKLineView.m */,
+			);
+			path = KLineView;
+			sourceTree = "<group>";
+		};
+		1ADF347A22D6E256003AAF14 /* VolumeView */ = {
+			isa = PBXGroup;
+			children = (
+				1ADF349122D70595003AAF14 /* LABStockVolumeContainerView.h */,
+				1ADF349222D70595003AAF14 /* LABStockVolumeContainerView.m */,
+				1ADF349522D705A9003AAF14 /* LABStockVolumeBgView.h */,
+				1ADF349622D705A9003AAF14 /* LABStockVolumeBgView.m */,
+				1ADF349922D705BA003AAF14 /* LABStockVolumeView.h */,
+				1ADF349A22D705BA003AAF14 /* LABStockVolumeView.m */,
+			);
+			path = VolumeView;
+			sourceTree = "<group>";
+		};
+		1ADF347B22D6E261003AAF14 /* TimeView */ = {
+			isa = PBXGroup;
+			children = (
+				1ADF34A922D706C1003AAF14 /* LABStockTimeView.h */,
+				1ADF34AA22D706C1003AAF14 /* LABStockTimeView.m */,
+			);
+			path = TimeView;
+			sourceTree = "<group>";
+		};
+		1ADF347C22D6E26C003AAF14 /* MaskView */ = {
+			isa = PBXGroup;
+			children = (
+				1ADF34AD22D70700003AAF14 /* LABStockMaskView.h */,
+				1ADF34AE22D70700003AAF14 /* LABStockMaskView.m */,
+				1ADF34B122D7071D003AAF14 /* LABStockTimeLineMaskView.h */,
+				1ADF34B222D7071D003AAF14 /* LABStockTimeLineMaskView.m */,
+				1ADF34B522D70729003AAF14 /* LABStockKLineMaskView.h */,
+				1ADF34B622D70729003AAF14 /* LABStockKLineMaskView.m */,
+			);
+			path = MaskView;
+			sourceTree = "<group>";
+		};
+		1ADF347D22D6E272003AAF14 /* Accessory */ = {
+			isa = PBXGroup;
+			children = (
+				1ADF34BE22D83202003AAF14 /* LABStockAccessoryBase.h */,
+				1ADF34BF22D83202003AAF14 /* LABStockAccessoryBase.m */,
+				1ADF353722DC717F003AAF14 /* LABStockAccessoryKLine.h */,
+				1ADF353822DC717F003AAF14 /* LABStockAccessoryKLine.m */,
+				1ADF34C222D86250003AAF14 /* LABStockDrawLine.h */,
+				1ADF34C322D86250003AAF14 /* LABStockDrawLine.m */,
+				1ADF34C622D86AE9003AAF14 /* LABStockMA.h */,
+				1ADF34C722D86AE9003AAF14 /* LABStockMA.m */,
+				1ADF34D722DC4FB1003AAF14 /* LABStockVolumeMA.h */,
+				1ADF34D822DC4FB1003AAF14 /* LABStockVolumeMA.m */,
+				1ADF34DB22DC6E36003AAF14 /* LABStockASI.h */,
+				1ADF34DC22DC6E36003AAF14 /* LABStockASI.m */,
+				1ADF34DF22DC6E49003AAF14 /* LABStockBIAS.h */,
+				1ADF34E022DC6E49003AAF14 /* LABStockBIAS.m */,
+				1ADF34E322DC6E59003AAF14 /* LABStockBOLL.h */,
+				1ADF34E422DC6E59003AAF14 /* LABStockBOLL.m */,
+				1ADF34E722DC6E65003AAF14 /* LABStockBRAR.h */,
+				1ADF34E822DC6E65003AAF14 /* LABStockBRAR.m */,
+				1ADF34EB22DC6E71003AAF14 /* LABStockCCI.h */,
+				1ADF34EC22DC6E71003AAF14 /* LABStockCCI.m */,
+				1ADF34EF22DC6E82003AAF14 /* LABStockCR.h */,
+				1ADF34F022DC6E82003AAF14 /* LABStockCR.m */,
+				1ADF34F322DC6E8E003AAF14 /* LABStockDMA.h */,
+				1ADF34F422DC6E8E003AAF14 /* LABStockDMA.m */,
+				1ADF34F722DC6E9F003AAF14 /* LABStockDMI.h */,
+				1ADF34F822DC6E9F003AAF14 /* LABStockDMI.m */,
+				1ADF34FB22DC6EB0003AAF14 /* LABStockEMV.h */,
+				1ADF34FC22DC6EB0003AAF14 /* LABStockEMV.m */,
+				1ADF34FF22DC6EBD003AAF14 /* LABStockEXPMA.h */,
+				1ADF350022DC6EBD003AAF14 /* LABStockEXPMA.m */,
+				1ADF350322DC6ECA003AAF14 /* LABStockKDJ.h */,
+				1ADF350422DC6ECA003AAF14 /* LABStockKDJ.m */,
+				1ADF350722DC6ED9003AAF14 /* LABStockMACD.h */,
+				1ADF350822DC6ED9003AAF14 /* LABStockMACD.m */,
+				1ADF350B22DC6EE5003AAF14 /* LABStockMIKE.h */,
+				1ADF350C22DC6EE5003AAF14 /* LABStockMIKE.m */,
+				1ADF351322DC6F05003AAF14 /* LABStockOBV.h */,
+				1ADF351422DC6F05003AAF14 /* LABStockOBV.m */,
+				1ADF351722DC6F14003AAF14 /* LABStockPSY.h */,
+				1ADF351822DC6F14003AAF14 /* LABStockPSY.m */,
+				1ADF351B22DC6F21003AAF14 /* LABStockROC.h */,
+				1ADF351C22DC6F21003AAF14 /* LABStockROC.m */,
+				1ADF351F22DC6F2D003AAF14 /* LABStockRSI.h */,
+				1ADF352022DC6F2D003AAF14 /* LABStockRSI.m */,
+				1ADF352322DC6F3B003AAF14 /* LABStockSAR.h */,
+				1ADF352422DC6F3B003AAF14 /* LABStockSAR.m */,
+				1ADF352722DC6F49003AAF14 /* LABStockTRIX.h */,
+				1ADF352822DC6F49003AAF14 /* LABStockTRIX.m */,
+				1ADF352B22DC6F5A003AAF14 /* LABStockVR.h */,
+				1ADF352C22DC6F5A003AAF14 /* LABStockVR.m */,
+				1ADF352F22DC6F63003AAF14 /* LABStockWR.h */,
+				1ADF353022DC6F63003AAF14 /* LABStockWR.m */,
+				1ADF353322DC6F6F003AAF14 /* LABStockWVAD.h */,
+				1ADF353422DC6F6F003AAF14 /* LABStockWVAD.m */,
+			);
+			path = Accessory;
+			sourceTree = "<group>";
+		};
+		1ADF347E22D6E2AC003AAF14 /* AccessoryView */ = {
+			isa = PBXGroup;
+			children = (
+				1ADF349D22D70618003AAF14 /* LABStockAccessoryContainerView.h */,
+				1ADF349E22D70618003AAF14 /* LABStockAccessoryContainerView.m */,
+				1ADF34A122D70645003AAF14 /* LABStockAccessoryBgView.h */,
+				1ADF34A222D70645003AAF14 /* LABStockAccessoryBgView.m */,
+				1ADF34A522D70663003AAF14 /* LABStockAccessoryView.h */,
+				1ADF34A622D70663003AAF14 /* LABStockAccessoryView.m */,
+			);
+			path = AccessoryView;
+			sourceTree = "<group>";
+		};
+		1ADF34B922D70A7B003AAF14 /* Pos */ = {
+			isa = PBXGroup;
+			children = (
+				1ADF34BA22D70A9E003AAF14 /* LABStockViewPos.h */,
+				1ADF34BB22D70A9E003AAF14 /* LABStockViewPos.m */,
+			);
+			path = Pos;
+			sourceTree = "<group>";
+		};
+		1ADF34CA22D86CA0003AAF14 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				1ADF34CB22D86CB2003AAF14 /* LABStockFormatUtils.h */,
+				1ADF34CC22D86CB2003AAF14 /* LABStockFormatUtils.m */,
+				1ADF34D322DC1934003AAF14 /* LABStockTimeUtils.h */,
+				1ADF34D422DC1934003AAF14 /* LABStockTimeUtils.m */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		1ADF353B22DC8666003AAF14 /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+				1ADF346722D6D638003AAF14 /* LABStockConstant.h */,
+			);
+			path = Constant;
+			sourceTree = "<group>";
+		};
+		1AF7B85322E54CB100BF9A0E /* Protrait */ = {
+			isa = PBXGroup;
+			children = (
+				1AF7B8D422EA98AE00BF9A0E /* LABStockProtraitQuoteView.h */,
+				1AF7B8D522EA98AE00BF9A0E /* LABStockProtraitQuoteView.m */,
+				1AF7B85522E54EED00BF9A0E /* LABStockProtraitQuoteView.xib */,
+				1AF7B86022E5577B00BF9A0E /* LABStockSelectBarProtrait.h */,
+				1AF7B86122E5577B00BF9A0E /* LABStockSelectBarProtrait.m */,
+				1AF7B85D22E5545000BF9A0E /* LABStockSelectBarProtrait.xib */,
+				1AF7B86622E55BD300BF9A0E /* LABStockSelectBarAccessoryView.h */,
+				1AF7B86722E55BD300BF9A0E /* LABStockSelectBarAccessoryView.m */,
+				1AF7B86922E5612D00BF9A0E /* LABStockProtraitView.h */,
+				1AF7B86A22E5612D00BF9A0E /* LABStockProtraitView.m */,
+			);
+			path = Protrait;
+			sourceTree = "<group>";
+		};
+		1AF7B85422E54CC300BF9A0E /* Landspace */ = {
+			isa = PBXGroup;
+			children = (
+				1AF7B8D122EA985700BF9A0E /* LABStockLandspaceQuoteView.h */,
+				1AF7B8D222EA985700BF9A0E /* LABStockLandspaceQuoteView.m */,
+				1AF7B8D722EA9A4200BF9A0E /* LABStockLandspaceQuoteView.xib */,
+				1AF7B8D922EA9B5600BF9A0E /* LABStockSelectBarLandspace.h */,
+				1AF7B8DA22EA9B5600BF9A0E /* LABStockSelectBarLandspace.m */,
+				1AF7B8DC22EA9B5F00BF9A0E /* LABStockSelectBarLandspace.xib */,
+				1AF7B8DE22EA9C2C00BF9A0E /* LABStockLandspaceAccessory.h */,
+				1AF7B8DF22EA9C2C00BF9A0E /* LABStockLandspaceAccessory.m */,
+				1AF7B8E122EA9CE600BF9A0E /* LABStockLandspaceView.h */,
+				1AF7B8E222EA9CE600BF9A0E /* LABStockLandspaceView.m */,
+			);
+			path = Landspace;
+			sourceTree = "<group>";
+		};
+		1AF7B85F22E5559F00BF9A0E /* Stock */ = {
+			isa = PBXGroup;
+			children = (
+				1AF7B87122E564C500BF9A0E /* LABStock.h */,
+				1AF7B87222E564C500BF9A0E /* LABStock.m */,
+				1AF7B85A22E5544000BF9A0E /* LABStockSelectBar.h */,
+				1AF7B85B22E5544000BF9A0E /* LABStockSelectBar.m */,
+				1AF7B86322E55B1F00BF9A0E /* LABStockSelectBarMoreView.h */,
+				1AF7B86422E55B1F00BF9A0E /* LABStockSelectBarMoreView.m */,
+				1AF7B86C22E5620200BF9A0E /* LABStcokSelectMaskView.h */,
+				1AF7B86D22E5620200BF9A0E /* LABStcokSelectMaskView.m */,
+				1AF7B86F22E5622300BF9A0E /* LABStcokSelectMaskView.xib */,
+				1AF7B85722E54EFE00BF9A0E /* LABStockQuoteView.h */,
+				1AF7B85822E54EFE00BF9A0E /* LABStockQuoteView.m */,
+				1AF7B87622E58E0A00BF9A0E /* LABStockDataTools.h */,
+				1AF7B87722E58E0A00BF9A0E /* LABStockDataTools.m */,
+				1AF7B85422E54CC300BF9A0E /* Landspace */,
+				1AF7B85322E54CB100BF9A0E /* Protrait */,
+			);
+			path = Stock;
+			sourceTree = "<group>";
+		};
+		1AF7B87922E58F8B00BF9A0E /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				1AF7B87C22E5906C00BF9A0E /* minData.plist */,
+				1AF7B8A022E8380900BF9A0E /* DataModel.h */,
+				1AF7B8A122E8380900BF9A0E /* DataModel.m */,
+				1AF7B8CB22E9544700BF9A0E /* LABStockDataModel.h */,
+				1AF7B8CC22E9544700BF9A0E /* LABStockDataModel.m */,
+				1AF7B8CE22EA97BD00BF9A0E /* LABStockQuoteViewData.h */,
+				1AF7B8CF22EA97BD00BF9A0E /* LABStockQuoteViewData.m */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		35E1F4BB407F3568984A2920 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				624064EF8792B781E5B2CBA7 /* libPods-LABStockDemo.a */,
+				B21157DE5D085918306BCBD6 /* libPods-LABStockFramework.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F60E0F8407604F61C7006D94 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8AAE539AB5FAB26C523DABA0 /* Pods-LABStockDemo.debug.xcconfig */,
+				A11FCFDFA055EC5EE9849500 /* Pods-LABStockDemo.release.xcconfig */,
+				DF1539F582A66AA41EF126E6 /* Pods-LABStockFramework.debug.xcconfig */,
+				ABF6782985D707A77022435E /* Pods-LABStockFramework.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		1A4D93F422D6CF5500D985DC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1ADF34F922DC6E9F003AAF14 /* LABStockDMI.h in Headers */,
+				1ADF34E522DC6E59003AAF14 /* LABStockBOLL.h in Headers */,
+				1ADF350122DC6EBD003AAF14 /* LABStockEXPMA.h in Headers */,
+				1ADF34ED22DC6E71003AAF14 /* LABStockCCI.h in Headers */,
+				1ADF34D522DC1934003AAF14 /* LABStockTimeUtils.h in Headers */,
+				1ADF34BC22D70A9E003AAF14 /* LABStockViewPos.h in Headers */,
+				1ADF348B22D703C7003AAF14 /* LABStockTimeLineBgView.h in Headers */,
+				1ADF34E922DC6E65003AAF14 /* LABStockBRAR.h in Headers */,
+				1A4D941622D6D15100D985DC /* LABStockVolumePositionModel.h in Headers */,
+				1ADF34E122DC6E49003AAF14 /* LABStockBIAS.h in Headers */,
+				1ADF34C822D86AE9003AAF14 /* LABStockMA.h in Headers */,
+				1ADF348F22D7041E003AAF14 /* LABStockTimeLineMainView.h in Headers */,
+				1ADF348322D6FC27003AAF14 /* LABStockTimeLineView.h in Headers */,
+				1ADF34AB22D706C1003AAF14 /* LABStockTimeView.h in Headers */,
+				1ADF346822D6D638003AAF14 /* LABStockConstant.h in Headers */,
+				1ADF34C022D83202003AAF14 /* LABStockAccessoryBase.h in Headers */,
+				1ADF34A322D70645003AAF14 /* LABStockAccessoryBgView.h in Headers */,
+				1ADF353522DC6F6F003AAF14 /* LABStockWVAD.h in Headers */,
+				1ADF349322D70595003AAF14 /* LABStockVolumeContainerView.h in Headers */,
+				1ADF349F22D70618003AAF14 /* LABStockAccessoryContainerView.h in Headers */,
+				1ADF34CD22D86CB2003AAF14 /* LABStockFormatUtils.h in Headers */,
+				1ADF351D22DC6F21003AAF14 /* LABStockROC.h in Headers */,
+				1ADF346C22D6D8A4003AAF14 /* LABStockVariable.h in Headers */,
+				1ADF348022D6E38B003AAF14 /* LABStockDataProtocol.h in Headers */,
+				1ADF354622DC86F4003AAF14 /* LABStockKLineBgView.h in Headers */,
+				1ADF348722D70156003AAF14 /* LABStockTimeLineContainerView.h in Headers */,
+				1ADF34DD22DC6E36003AAF14 /* LABStockASI.h in Headers */,
+				1ADF347122D6D8CB003AAF14 /* UIColor+LABStock.h in Headers */,
+				1ADF351522DC6F05003AAF14 /* LABStockOBV.h in Headers */,
+				1ADF351922DC6F14003AAF14 /* LABStockPSY.h in Headers */,
+				1ADF353122DC6F63003AAF14 /* LABStockWR.h in Headers */,
+				1ADF34F122DC6E82003AAF14 /* LABStockCR.h in Headers */,
+				1ADF350922DC6ED9003AAF14 /* LABStockMACD.h in Headers */,
+				1ADF352922DC6F49003AAF14 /* LABStockTRIX.h in Headers */,
+				1ADF354A22DC86FE003AAF14 /* LABStockKLineView.h in Headers */,
+				1ADF352122DC6F2D003AAF14 /* LABStockRSI.h in Headers */,
+				1ADF347522D6E20C003AAF14 /* LABStockMainView.h in Headers */,
+				1ADF34B322D7071D003AAF14 /* LABStockTimeLineMaskView.h in Headers */,
+				1ADF350D22DC6EE5003AAF14 /* LABStockMIKE.h in Headers */,
+				1ADF34C422D86250003AAF14 /* LABStockDrawLine.h in Headers */,
+				1ADF349B22D705BA003AAF14 /* LABStockVolumeView.h in Headers */,
+				1ADF34D922DC4FB1003AAF14 /* LABStockVolumeMA.h in Headers */,
+				1ADF352522DC6F3B003AAF14 /* LABStockSAR.h in Headers */,
+				1A4D941222D6D13900D985DC /* LABStockKLinePositionModel.h in Headers */,
+				1ADF353E22DC86AE003AAF14 /* LABStockKLineMainView.h in Headers */,
+				1ADF34A722D70663003AAF14 /* LABStockAccessoryView.h in Headers */,
+				1ADF352D22DC6F5A003AAF14 /* LABStockVR.h in Headers */,
+				1ADF353922DC717F003AAF14 /* LABStockAccessoryKLine.h in Headers */,
+				1ADF34B722D70729003AAF14 /* LABStockKLineMaskView.h in Headers */,
+				1ADF34F522DC6E8E003AAF14 /* LABStockDMA.h in Headers */,
+				1A4D93FD22D6CF5500D985DC /* LABStockFramework.h in Headers */,
+				1ADF34AF22D70700003AAF14 /* LABStockMaskView.h in Headers */,
+				1ADF354222DC86E5003AAF14 /* LABStockKLineContainerView.h in Headers */,
+				1ADF34FD22DC6EB0003AAF14 /* LABStockEMV.h in Headers */,
+				1ADF349722D705A9003AAF14 /* LABStockVolumeBgView.h in Headers */,
+				1ADF350522DC6ECA003AAF14 /* LABStockKDJ.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		1A4D93C822D6CBEF00D985DC /* LABStockDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1A4D93DF22D6CBF000D985DC /* Build configuration list for PBXNativeTarget "LABStockDemo" */;
+			buildPhases = (
+				6EBA96148F79EC3A934D855C /* [CP] Check Pods Manifest.lock */,
+				1A4D93C522D6CBEF00D985DC /* Sources */,
+				1A4D93C622D6CBEF00D985DC /* Frameworks */,
+				1A4D93C722D6CBEF00D985DC /* Resources */,
+				1A4D93F322D6CBFE00D985DC /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1A4D93FF22D6CF5500D985DC /* PBXTargetDependency */,
+			);
+			name = LABStockDemo;
+			productName = LABStockDemo;
+			productReference = 1A4D93C922D6CBEF00D985DC /* LABStockDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1A4D93F822D6CF5500D985DC /* LABStockFramework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1A4D940222D6CF5500D985DC /* Build configuration list for PBXNativeTarget "LABStockFramework" */;
+			buildPhases = (
+				07FFDECD2D2129CCC34DFA45 /* [CP] Check Pods Manifest.lock */,
+				1A4D93F422D6CF5500D985DC /* Headers */,
+				1A4D93F522D6CF5500D985DC /* Sources */,
+				1A4D93F622D6CF5500D985DC /* Frameworks */,
+				1A4D93F722D6CF5500D985DC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LABStockFramework;
+			productName = LABStockFramework;
+			productReference = 1A4D93F922D6CF5500D985DC /* LABStockFramework.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1A4D93C122D6CBEF00D985DC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = leixt;
+				TargetAttributes = {
+					1A4D93C822D6CBEF00D985DC = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					1A4D93F822D6CF5500D985DC = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = 1A4D93C422D6CBEF00D985DC /* Build configuration list for PBXProject "LABStockDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1A4D93C022D6CBEF00D985DC;
+			productRefGroup = 1A4D93CA22D6CBEF00D985DC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1A4D93C822D6CBEF00D985DC /* LABStockDemo */,
+				1A4D93F822D6CF5500D985DC /* LABStockFramework */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1A4D93C722D6CBEF00D985DC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1AF7B85E22E5545000BF9A0E /* LABStockSelectBarProtrait.xib in Resources */,
+				1AF7B8DD22EA9B5F00BF9A0E /* LABStockSelectBarLandspace.xib in Resources */,
+				1AF7B87D22E5906C00BF9A0E /* minData.plist in Resources */,
+				1A4D93D922D6CBF000D985DC /* LaunchScreen.storyboard in Resources */,
+				1A4D93D622D6CBF000D985DC /* Assets.xcassets in Resources */,
+				1AF7B85622E54EED00BF9A0E /* LABStockProtraitQuoteView.xib in Resources */,
+				1A4D93D422D6CBEF00D985DC /* Main.storyboard in Resources */,
+				1AF7B8D822EA9A4200BF9A0E /* LABStockLandspaceQuoteView.xib in Resources */,
+				1AF7B87022E5622300BF9A0E /* LABStcokSelectMaskView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A4D93F722D6CF5500D985DC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		07FFDECD2D2129CCC34DFA45 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LABStockFramework-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6EBA96148F79EC3A934D855C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LABStockDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1A4D93C522D6CBEF00D985DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1AF7B8A222E8380900BF9A0E /* DataModel.m in Sources */,
+				1A4D93D122D6CBEF00D985DC /* ViewController.m in Sources */,
+				1AF7B86B22E5612D00BF9A0E /* LABStockProtraitView.m in Sources */,
+				1AF7B8E622EAA63000BF9A0E /* SecondViewController.m in Sources */,
+				1AF7B8E322EA9CE600BF9A0E /* LABStockLandspaceView.m in Sources */,
+				1AF7B8E022EA9C2C00BF9A0E /* LABStockLandspaceAccessory.m in Sources */,
+				1AF7B85C22E5544000BF9A0E /* LABStockSelectBar.m in Sources */,
+				1AF7B87522E5827000BF9A0E /* LABStock.m in Sources */,
+				1AF7B86E22E5620200BF9A0E /* LABStcokSelectMaskView.m in Sources */,
+				1AF7B8CD22E9544700BF9A0E /* LABStockDataModel.m in Sources */,
+				1A4D93DC22D6CBF000D985DC /* main.m in Sources */,
+				1AF7B85922E54EFE00BF9A0E /* LABStockQuoteView.m in Sources */,
+				1AF7B8E922EACE1400BF9A0E /* NavViewController.m in Sources */,
+				1AF7B86822E55BD300BF9A0E /* LABStockSelectBarAccessoryView.m in Sources */,
+				1AF7B87822E58E0A00BF9A0E /* LABStockDataTools.m in Sources */,
+				1A4D93CE22D6CBEF00D985DC /* AppDelegate.m in Sources */,
+				1AF7B8D022EA97BE00BF9A0E /* LABStockQuoteViewData.m in Sources */,
+				1AF7B8D622EA98AE00BF9A0E /* LABStockProtraitQuoteView.m in Sources */,
+				1AF7B8DB22EA9B5600BF9A0E /* LABStockSelectBarLandspace.m in Sources */,
+				1AF7B86222E5577B00BF9A0E /* LABStockSelectBarProtrait.m in Sources */,
+				1AF7B8D322EA985700BF9A0E /* LABStockLandspaceQuoteView.m in Sources */,
+				1AF7B86522E55B1F00BF9A0E /* LABStockSelectBarMoreView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A4D93F522D6CF5500D985DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1ADF34DA22DC4FB1003AAF14 /* LABStockVolumeMA.m in Sources */,
+				1ADF34B422D7071D003AAF14 /* LABStockTimeLineMaskView.m in Sources */,
+				1ADF352E22DC6F5A003AAF14 /* LABStockVR.m in Sources */,
+				1ADF351622DC6F05003AAF14 /* LABStockOBV.m in Sources */,
+				1ADF349822D705A9003AAF14 /* LABStockVolumeBgView.m in Sources */,
+				1ADF34D622DC1934003AAF14 /* LABStockTimeUtils.m in Sources */,
+				1ADF348822D70156003AAF14 /* LABStockTimeLineContainerView.m in Sources */,
+				1ADF34EA22DC6E65003AAF14 /* LABStockBRAR.m in Sources */,
+				1ADF34A022D70618003AAF14 /* LABStockAccessoryContainerView.m in Sources */,
+				1ADF34CE22D86CB2003AAF14 /* LABStockFormatUtils.m in Sources */,
+				1ADF34C122D83202003AAF14 /* LABStockAccessoryBase.m in Sources */,
+				1ADF348C22D703C7003AAF14 /* LABStockTimeLineBgView.m in Sources */,
+				1ADF34EE22DC6E71003AAF14 /* LABStockCCI.m in Sources */,
+				1ADF350A22DC6ED9003AAF14 /* LABStockMACD.m in Sources */,
+				1ADF354B22DC86FE003AAF14 /* LABStockKLineView.m in Sources */,
+				1ADF34FE22DC6EB0003AAF14 /* LABStockEMV.m in Sources */,
+				1ADF354322DC86E5003AAF14 /* LABStockKLineContainerView.m in Sources */,
+				1ADF347222D6D8CB003AAF14 /* UIColor+LABStock.m in Sources */,
+				1ADF349022D7041E003AAF14 /* LABStockTimeLineMainView.m in Sources */,
+				1ADF347622D6E20C003AAF14 /* LABStockMainView.m in Sources */,
+				1ADF34BD22D70A9E003AAF14 /* LABStockViewPos.m in Sources */,
+				1ADF353222DC6F63003AAF14 /* LABStockWR.m in Sources */,
+				1ADF34F222DC6E82003AAF14 /* LABStockCR.m in Sources */,
+				1ADF350622DC6ECA003AAF14 /* LABStockKDJ.m in Sources */,
+				1ADF349422D70595003AAF14 /* LABStockVolumeContainerView.m in Sources */,
+				1ADF34C922D86AE9003AAF14 /* LABStockMA.m in Sources */,
+				1ADF34B822D70729003AAF14 /* LABStockKLineMaskView.m in Sources */,
+				1ADF351E22DC6F21003AAF14 /* LABStockROC.m in Sources */,
+				1ADF34FA22DC6E9F003AAF14 /* LABStockDMI.m in Sources */,
+				1ADF352A22DC6F49003AAF14 /* LABStockTRIX.m in Sources */,
+				1ADF348422D6FC27003AAF14 /* LABStockTimeLineView.m in Sources */,
+				1ADF34A822D70663003AAF14 /* LABStockAccessoryView.m in Sources */,
+				1ADF353622DC6F6F003AAF14 /* LABStockWVAD.m in Sources */,
+				1ADF34AC22D706C1003AAF14 /* LABStockTimeView.m in Sources */,
+				1ADF353A22DC717F003AAF14 /* LABStockAccessoryKLine.m in Sources */,
+				1ADF354722DC86F4003AAF14 /* LABStockKLineBgView.m in Sources */,
+				1A4D941322D6D13900D985DC /* LABStockKLinePositionModel.m in Sources */,
+				1ADF352622DC6F3B003AAF14 /* LABStockSAR.m in Sources */,
+				1ADF351A22DC6F14003AAF14 /* LABStockPSY.m in Sources */,
+				1ADF34B022D70700003AAF14 /* LABStockMaskView.m in Sources */,
+				1ADF349C22D705BA003AAF14 /* LABStockVolumeView.m in Sources */,
+				1ADF34E622DC6E59003AAF14 /* LABStockBOLL.m in Sources */,
+				1ADF34A422D70645003AAF14 /* LABStockAccessoryBgView.m in Sources */,
+				1ADF34E222DC6E49003AAF14 /* LABStockBIAS.m in Sources */,
+				1ADF352222DC6F2D003AAF14 /* LABStockRSI.m in Sources */,
+				1ADF346D22D6D8A4003AAF14 /* LABStockVariable.m in Sources */,
+				1ADF350E22DC6EE5003AAF14 /* LABStockMIKE.m in Sources */,
+				1ADF34F622DC6E8E003AAF14 /* LABStockDMA.m in Sources */,
+				1ADF350222DC6EBD003AAF14 /* LABStockEXPMA.m in Sources */,
+				1ADF353F22DC86AE003AAF14 /* LABStockKLineMainView.m in Sources */,
+				1ADF34C522D86250003AAF14 /* LABStockDrawLine.m in Sources */,
+				1A4D941722D6D15100D985DC /* LABStockVolumePositionModel.m in Sources */,
+				1ADF34DE22DC6E36003AAF14 /* LABStockASI.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1A4D93FF22D6CF5500D985DC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1A4D93F822D6CF5500D985DC /* LABStockFramework */;
+			targetProxy = 1A4D93FE22D6CF5500D985DC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1A4D93D222D6CBEF00D985DC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1A4D93D322D6CBEF00D985DC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1A4D93D722D6CBF000D985DC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1A4D93D822D6CBF000D985DC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1A4D93DD22D6CBF000D985DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		1A4D93DE22D6CBF000D985DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1A4D93E022D6CBF000D985DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8AAE539AB5FAB26C523DABA0 /* Pods-LABStockDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5PGMBEL953;
+				INFOPLIST_FILE = LABStockDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cn.com.gnnt.LABStockDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		1A4D93E122D6CBF000D985DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A11FCFDFA055EC5EE9849500 /* Pods-LABStockDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5PGMBEL953;
+				INFOPLIST_FILE = LABStockDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cn.com.gnnt.LABStockDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		1A4D940322D6CF5500D985DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DF1539F582A66AA41EF126E6 /* Pods-LABStockFramework.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = LABStockFramework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cn.com.gnnt.LABStockFramework;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		1A4D940422D6CF5500D985DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ABF6782985D707A77022435E /* Pods-LABStockFramework.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = LABStockFramework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cn.com.gnnt.LABStockFramework;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1A4D93C422D6CBEF00D985DC /* Build configuration list for PBXProject "LABStockDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A4D93DD22D6CBF000D985DC /* Debug */,
+				1A4D93DE22D6CBF000D985DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1A4D93DF22D6CBF000D985DC /* Build configuration list for PBXNativeTarget "LABStockDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A4D93E022D6CBF000D985DC /* Debug */,
+				1A4D93E122D6CBF000D985DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1A4D940222D6CF5500D985DC /* Build configuration list for PBXNativeTarget "LABStockFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A4D940322D6CF5500D985DC /* Debug */,
+				1A4D940422D6CF5500D985DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1A4D93C122D6CBEF00D985DC /* Project object */;
+}
